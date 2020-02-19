@@ -30,13 +30,13 @@ public class RegisterController {
 	@RequestMapping("/input")
 	public String input(){
 		// トークンをセッションに保存		
-		session.setAttribute("token", UUID.randomUUID().toString());
+		session.setAttribute("token", UUID.randomUUID());
 		return "input";
 	}
 	
 	@RequestMapping("/bad-input")
 	public String badInput(){
-		session.setAttribute("token", UUID.randomUUID().toString());
+		session.setAttribute("token", UUID.randomUUID());
 		return "bad-input";
 	}
 	
