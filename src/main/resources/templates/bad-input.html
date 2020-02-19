@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="ja" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>サンプル</title>
+</head>
+<body>
+<!-- 不正なリクエストのためトークンが埋め込まれていない -->
+
+<form th:action="@{/register/to-result}" method="post">
+<h1>名前を入力してください</h1>
+名前：<input type="text" name="name"><br>
+<button>登録</button>
+</form>
+</body>
+</html>

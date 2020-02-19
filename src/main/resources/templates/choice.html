@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="ja" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>サンプル</title>
+</head>
+<body>
+<h1>ページを選択してください</h1>
+<a th:href="@{/register/input}">正常なリクエストページ</a><br><br>
+<a th:href="@{/register/bad-input}">不正なリクエストページ</a>
+
+</body>
+</html>
